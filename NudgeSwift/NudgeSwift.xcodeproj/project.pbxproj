@@ -12,6 +12,8 @@
 		5C3972A62A46F2DC006A43FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3972A42A46F2DC006A43FC /* Main.storyboard */; };
 		5C3972A82A46F2DD006A43FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3972A72A46F2DD006A43FC /* Assets.xcassets */; };
 		5C3972AB2A46F2DD006A43FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3972A92A46F2DD006A43FC /* LaunchScreen.storyboard */; };
+		5C3972E32A4718E4006A43FC /* nudgeBase in Frameworks */ = {isa = PBXBuildFile; productRef = 5C3972E22A4718E4006A43FC /* nudgeBase */; };
+		5C3972E62A471939006A43FC /* nudgeGeo in Frameworks */ = {isa = PBXBuildFile; productRef = 5C3972E52A471939006A43FC /* nudgeGeo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		5C3972A72A46F2DD006A43FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C3972AA2A46F2DD006A43FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C3972AC2A46F2DD006A43FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C3972E02A4717DF006A43FC /* NudgeSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NudgeSwift.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3972E62A471939006A43FC /* nudgeGeo in Frameworks */,
+				5C3972E32A4718E4006A43FC /* nudgeBase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,7 @@
 		5C39729D2A46F2DC006A43FC /* NudgeSwift */ = {
 			isa = PBXGroup;
 			children = (
+				5C3972E02A4717DF006A43FC /* NudgeSwift.entitlements */,
 				5C39729E2A46F2DC006A43FC /* AppDelegate.swift */,
 				5C3972A22A46F2DC006A43FC /* ViewController.swift */,
 				5C3972A42A46F2DC006A43FC /* Main.storyboard */,
@@ -80,6 +86,10 @@
 			dependencies = (
 			);
 			name = NudgeSwift;
+			packageProductDependencies = (
+				5C3972E22A4718E4006A43FC /* nudgeBase */,
+				5C3972E52A471939006A43FC /* nudgeGeo */,
+			);
 			productName = NudgeSwift;
 			productReference = 5C39729B2A46F2DC006A43FC /* NudgeSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -109,8 +119,8 @@
 			);
 			mainGroup = 5C3972922A46F2DC006A43FC;
 			packageReferences = (
-				5C3972D72A46F51E006A43FC /* XCRemoteSwiftPackageReference "nudgeBase" */,
-				5C3972D82A46F548006A43FC /* XCRemoteSwiftPackageReference "nudgeGeo" */,
+				5C3972E12A4718E4006A43FC /* XCRemoteSwiftPackageReference "nudgeBase" */,
+				5C3972E42A471939006A43FC /* XCRemoteSwiftPackageReference "nudgeGeo" */,
 			);
 			productRefGroup = 5C39729C2A46F2DC006A43FC /* Products */;
 			projectDirPath = "";
@@ -285,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NudgeSwift/NudgeSwift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LHQ7UZVNQZ;
@@ -294,6 +305,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NudgeSwift/NudgeSwift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LHQ7UZVNQZ;
@@ -322,6 +335,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -360,7 +374,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5C3972D72A46F51E006A43FC /* XCRemoteSwiftPackageReference "nudgeBase" */ = {
+		5C3972E12A4718E4006A43FC /* XCRemoteSwiftPackageReference "nudgeBase" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/getlarky/nudgeBase";
 			requirement = {
@@ -368,7 +382,7 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		5C3972D82A46F548006A43FC /* XCRemoteSwiftPackageReference "nudgeGeo" */ = {
+		5C3972E42A471939006A43FC /* XCRemoteSwiftPackageReference "nudgeGeo" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/getlarky/nudgeGeo";
 			requirement = {
@@ -377,6 +391,19 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C3972E22A4718E4006A43FC /* nudgeBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C3972E12A4718E4006A43FC /* XCRemoteSwiftPackageReference "nudgeBase" */;
+			productName = nudgeBase;
+		};
+		5C3972E52A471939006A43FC /* nudgeGeo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C3972E42A471939006A43FC /* XCRemoteSwiftPackageReference "nudgeGeo" */;
+			productName = nudgeGeo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5C3972932A46F2DC006A43FC /* Project object */;
 }

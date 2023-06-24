@@ -6,6 +6,8 @@
 //
 
 #import "ViewController.h"
+@import nudgeBase;
+@import nudgeGeo;
 
 @interface ViewController ()
 
@@ -15,6 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NudgeBase *myNudge = [[NudgeBase alloc] initWithOptions:@{
+        @"apiKey": @"<YOUR_API_KEY_HERE>",
+        @"enabled": @YES,
+        @"federationID": @"<USER_ID>"
+    }];
     // Do any additional setup after loading the view.
 }
 
