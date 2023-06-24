@@ -8,20 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		5C3972C02A46F325006A43FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3972BF2A46F325006A43FC /* AppDelegate.m */; };
-		5C3972C32A46F325006A43FC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3972C22A46F325006A43FC /* SceneDelegate.m */; };
 		5C3972C62A46F325006A43FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3972C52A46F325006A43FC /* ViewController.m */; };
 		5C3972C92A46F325006A43FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3972C72A46F325006A43FC /* Main.storyboard */; };
 		5C3972CB2A46F326006A43FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3972CA2A46F326006A43FC /* Assets.xcassets */; };
 		5C3972CE2A46F326006A43FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3972CC2A46F326006A43FC /* LaunchScreen.storyboard */; };
 		5C3972D12A46F326006A43FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3972D02A46F326006A43FC /* main.m */; };
+		5C3972DB2A46FC29006A43FC /* nudgeBase in Frameworks */ = {isa = PBXBuildFile; productRef = 5C3972DA2A46FC29006A43FC /* nudgeBase */; };
+		5C3972DE2A46FC3B006A43FC /* nudgeGeo in Frameworks */ = {isa = PBXBuildFile; productRef = 5C3972DD2A46FC3B006A43FC /* nudgeGeo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C3972BB2A46F325006A43FC /* NudgeObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NudgeObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3972BE2A46F325006A43FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C3972BF2A46F325006A43FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5C3972C12A46F325006A43FC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		5C3972C22A46F325006A43FC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		5C3972C42A46F325006A43FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5C3972C52A46F325006A43FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5C3972C82A46F325006A43FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3972DE2A46FC3B006A43FC /* nudgeGeo in Frameworks */,
+				5C3972DB2A46FC29006A43FC /* nudgeBase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +64,6 @@
 			children = (
 				5C3972BE2A46F325006A43FC /* AppDelegate.h */,
 				5C3972BF2A46F325006A43FC /* AppDelegate.m */,
-				5C3972C12A46F325006A43FC /* SceneDelegate.h */,
-				5C3972C22A46F325006A43FC /* SceneDelegate.m */,
 				5C3972C42A46F325006A43FC /* ViewController.h */,
 				5C3972C52A46F325006A43FC /* ViewController.m */,
 				5C3972C72A46F325006A43FC /* Main.storyboard */,
@@ -92,6 +91,10 @@
 			dependencies = (
 			);
 			name = NudgeObjC;
+			packageProductDependencies = (
+				5C3972DA2A46FC29006A43FC /* nudgeBase */,
+				5C3972DD2A46FC3B006A43FC /* nudgeGeo */,
+			);
 			productName = NudgeObjC;
 			productReference = 5C3972BB2A46F325006A43FC /* NudgeObjC.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +122,10 @@
 				Base,
 			);
 			mainGroup = 5C3972B22A46F325006A43FC;
+			packageReferences = (
+				5C3972D92A46FC29006A43FC /* XCRemoteSwiftPackageReference "nudgeBase" */,
+				5C3972DC2A46FC3B006A43FC /* XCRemoteSwiftPackageReference "nudgeGeo" */,
+			);
 			productRefGroup = 5C3972BC2A46F325006A43FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,7 +156,6 @@
 				5C3972C62A46F325006A43FC /* ViewController.m in Sources */,
 				5C3972C02A46F325006A43FC /* AppDelegate.m in Sources */,
 				5C3972D12A46F326006A43FC /* main.m in Sources */,
-				5C3972C32A46F325006A43FC /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +369,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5C3972D92A46FC29006A43FC /* XCRemoteSwiftPackageReference "nudgeBase" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getlarky/nudgeBase";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		5C3972DC2A46FC3B006A43FC /* XCRemoteSwiftPackageReference "nudgeGeo" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getlarky/nudgeGeo";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C3972DA2A46FC29006A43FC /* nudgeBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C3972D92A46FC29006A43FC /* XCRemoteSwiftPackageReference "nudgeBase" */;
+			productName = nudgeBase;
+		};
+		5C3972DD2A46FC3B006A43FC /* nudgeGeo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C3972DC2A46FC3B006A43FC /* XCRemoteSwiftPackageReference "nudgeGeo" */;
+			productName = nudgeGeo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5C3972B32A46F325006A43FC /* Project object */;
 }
