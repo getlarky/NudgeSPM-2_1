@@ -19,7 +19,8 @@
     // Override point for customization after application launch.
     UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
     center.delegate = self;
-    [NudgeBase registerForPushNotificationsAndReturnError:nil]; [application registerForRemoteNotifications];
+    [NudgeBase registerForPushNotificationsAndReturnError:nil];
+    [application registerForRemoteNotifications];
     return YES;
 }
 
@@ -27,7 +28,8 @@
     [NudgeBase onRegisteredForNotificationsWithDeviceToken:deviceToken];
 }
 
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error { [NudgeBase onFailedToRegisterForNotificationsWithError:error];
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    [NudgeBase onFailedToRegisterForNotificationsWithError:error];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
