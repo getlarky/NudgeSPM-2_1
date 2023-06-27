@@ -7,5 +7,9 @@
 		<string>location</string>
 		<string>remote-notification</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Please tap Always Allow to continue taking full advantage of personalized notifications for branch details, community events and possible fraud activity</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Allow While Using App to take full advantage of personalized notifications for branch details, community events and possible fraud activity</string>
 </dict>
 </plist>

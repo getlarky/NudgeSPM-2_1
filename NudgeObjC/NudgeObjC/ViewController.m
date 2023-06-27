@@ -11,16 +11,28 @@
 
 @interface ViewController ()
 
+@property(nonatomic, strong)NudgeBase *nudgeBase;
+@property(nonatomic, strong)NudgeGeo *nudgeGeo;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NudgeBase *myNudge = [[NudgeBase alloc] initWithOptions:@{
-        @"apiKey": @"<YOUR_API_KEY_HERE>",
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.nudgeBase = [[NudgeBase alloc] initWithOptions:@{
+        @"apiKey": @"y26htlmAfYUEsoIh5UV_Bw",
         @"enabled": @YES,
-        @"federationID": @"<USER_ID>"
+        @"federationID": @""
+    }];
+    
+    self.nudgeGeo = [[NudgeGeo alloc] initWithOptions:@{
+        @"apiKey": @"y26htlmAfYUEsoIh5UV_Bw",
+        @"enabled": @YES,
+        @"federationID": @""
+    } callback:^{
+        
     }];
     // Do any additional setup after loading the view.
 }
